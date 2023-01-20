@@ -12,7 +12,8 @@ def get_markup():
     itembtn1 = types.KeyboardButton('Салам')
     itembtn2 = types.KeyboardButton('Cаaт канча болду?')
     itembtn3 = types.KeyboardButton('Датаны корсот.')
-    markup.add(itembtn1, itembtn2, itembtn3)
+    itembtn4 = types.KeyboardButton('Атын ким?')
+    markup.add(itembtn1, itembtn2, itembtn3, itembtn4)
     return markup
 
 def get_time():
