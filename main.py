@@ -33,6 +33,10 @@ def answer_the_message(message):
     hello_msg = 'Салам'
     hi_msg = 'Уаллейкум ассалам'
     date_msg = 'Датаны корсот.'
+    name_bot = 'Менин атым Султан.'
+
+    if message.text == 'Атын ким?':
+        sultan.send_message(message.chat.id, name_bot)
 
     if message.text.lower() == help_msg:
         sultan.send_message(message.chat.id,ans_help,reply_markup=get_markup())
