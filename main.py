@@ -38,17 +38,20 @@ def answer_the_message(message):
     if message.text == 'Атын ким?':
         sultan.send_message(message.chat.id, name_bot)
 
-    if message.text.lower() == help_msg:
+    elif message.text.lower() == help_msg:
         sultan.send_message(message.chat.id,ans_help,reply_markup=get_markup())
 
-    if message.text == time_msg:
+    elif message.text == time_msg:
         sultan.send_message(message.chat.id, get_time())
 
-    if message.text == hello_msg:
+    elif message.text == hello_msg:
         sultan.send_message(message.chat.id, hi_msg)
 
-    if message.text == date_msg:
+    elif message.text == date_msg:
         sultan.send_message(message.chat.id, get_date())
+
+    else:
+        sultan.send_message(message.chat.id, 'Сроону туура бериниз')
 
 
 sultan.infinity_polling()
